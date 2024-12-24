@@ -1,0 +1,14 @@
+%{
+int capital_count=0;
+%}
+%%
+ [A-Z][A-Z a-z]*[^a-z]{capital_count++;}
+. ;
+int yy wrap(){
+return 1;
+}
+int main(){
+   yylex();
+      printf("number of capital word:%d\n",capital_count);
+   return 0;
+}
