@@ -11,5 +11,5 @@ if|else|while|int|switch|for|char { printf("its a keyword");}
 int yywrap( ){}
 int main()
 {
-	while( yylex());
+	while( yylex());#changed this from sailokeshnalabothu
 }
